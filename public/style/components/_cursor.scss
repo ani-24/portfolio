@@ -1,0 +1,27 @@
+@use "./../abstracts/" as *;
+
+.cursor {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+  mix-blend-mode: difference;
+  z-index: 200;
+  &--outer {
+    height: 1.75em;
+    width: 1.75em;
+    border: 2px solid $fg-clr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 150ms ease-out;
+  }
+  &--inner {
+    height: 5px;
+    width: 5px;
+    background: $fg-clr;
+  }
+}

@@ -1,0 +1,16 @@
+@use "./../abstracts/" as *;
+
+body {
+  color: $fg-clr;
+  font-family: $text-font;
+  font-size: 12px;
+  @include mq("sm") {
+    font-size: 14px;
+  }
+  @include mq("md") {
+    font-size: 16px;
+  }
+  @include mq("xxl") {
+    font-size: 24px;
+  }
+}
